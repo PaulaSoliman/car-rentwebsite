@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Car Rental</title>
+        <!-- Fav Icon -->
+        <link rel="shortcut icon" href="img/jeep.png" type="image/x-icon" />
+        <!-- Bootstrap -->
+        <link rel="stylesheet" href="css/bootstrap.min.css" />
+        <!-- Fontawsome -->
+        <link rel="stylesheet" href="css/all.min.css" />
+        <!-- My css -->
+        <link rel="stylesheet" href="css/logIn.css" />
+      </head>
+<body>
+    <section id="logIn">
+        <div class="container logInContent py-5">
+            <div class="row">
+                <div class="col-md-6 col-sm-12 d-flex align-items-center" id="logInArea">
+                    <div class="item pt-5">
+                        <!-- ===== Header Area ===== -->
+                        <div class="text-center">
+                            <i class="fa-solid fa-user" id="userFace"></i>
+                        </div>
+
+                        <div class="text-center">
+                            <h3 class="fw-bold" id="logInNow">Sign In</h3>
+                        </div>
+                        <!-- ========== End Header Area ========== -->
+
+                        <!-- ===== Alert Area ===== -->
+                        <div id="alertBox" class="d-none alert alert-danger d-flex align-items-center">
+                            <i class="fs-4 pe-3 fa-solid fa-triangle-exclamation"></i>
+                            <!-- ===== Fill All Fields ===== -->
+                            <div class="d-none" id="fillFields">
+                                <p class="fs-4">You should fill all fields</p>
+                            </div>
+
+                            <!-- ===== Email or Password is invalid ===== -->
+                            <div class="d-none" id="emailOrPasswordInvalid">
+                                <p class="fs-4">Please check your email or password, one of them is invalid</p>
+                            </div>
+
+                        </div>
+                        <!-- ========== End Alert Area ========== -->
+
+                        <div class="email">
+                            <label for="email" class="py-1 ps-2">Email</label>
+                            <input type="email" id="email" class="form-control" placeholder="Enter your Email, ABC@ABC.com">
+                        </div>
+
+                        <div class="password">
+                            <label for="password" class="py-1 ps-2">Password</label>
+                            <input type="password" id="password" class="form-control" placeholder="Enter your Password">
+                        </div>
+
+                        <div class="pt-3 pb-3">
+                            <div class="p-2 d-flex justify-content-between align-items-center">
+                                <div class="rememberMe">
+                                    <input type="checkbox" id="rememberMe">
+                                    <label class="" for="rememberMe">Remember me</label>
+                                </div>
+
+                                <div>
+                                    <a id="forgetPasswordBtn" class="text-decoration-none fst-italic text-muted">Forget Password?</a>
+                                </div>
+                                
+                            </div>
+
+                            <!-- Login Button -->
+                            <a class="btn my-3 d-flex justify-content-center align-items-center text-decoration-none" id="signInBtn">Log In</a>
+
+                            <!-- Not a member -->
+                            <div  class="text-center">
+                                <hr class="w-50 m-auto my-3">
+
+                                <p>Not a member?<a class="ps-3 text-decoration-none fst-italic text-muted" href="signUp.html">Creat Account</a>
+                                </p>
+                            </div>
+                            
+                        </div>
+                    </div>
+                </div>
+
+                <div class="col-md-6 col-sm-12 d-flex align-items-center d-none" id="forgetPasswordArea">
+                    <div class="item pt-5">
+                        <!-- ===== Header Area ===== -->
+                        <div class="text-center">
+                            <i class="fa-solid fa-user" id="userFace"></i>
+                        </div>
+
+                        <div class="text-center">
+                            <h3 class="fw-bold" id="forgetPassword">Forget Password</h3>
+                        </div>
+                        <!-- ========== End Header Area ========== -->
+
+                        <!-- ===== Alert Area ===== -->
+                        <div id="alertBox" class="d-none alert alert-danger d-flex align-items-center">
+                            <i class="fs-4 pe-3 fa-solid fa-triangle-exclamation"></i>
+                            <!-- ===== Fill All Fields ===== -->
+                            <div class="d-none" id="fillFields">
+                                <p class="fs-4">You should fill all fields</p>
+                            </div>
+
+                            <!-- ===== Email or Password is invalid ===== -->
+                            <div class="d-none" id="emailOrPasswordInvalid">
+                                <p class="fs-4">Please check your email or password, one of them is invalid</p>
+                            </div>
+
+                        </div>
+                        <!-- ========== End Alert Area ========== -->
+
+                        <form action="" id="forgetPasswordForm">
+                        <div class="email">
+                            <label for="email" class="py-1 ps-2">Email</label>
+                            <input type="email" id="emailOfForgottenPassword" class="form-control" placeholder="Enter your Email, ABC@ABC.com">
+                        </div>
+
+                        <div class="pt-3 pb-3">
+                            <!-- Login Button -->
+                            <button class="btn my-3 d-flex justify-content-center align-items-center text-decoration-none" id="sendPassword">Send Password</button>
+                        </div>
+                        </form>
+
+                        <div class="pt-3 pb-3">
+                            <!-- Login Button -->
+                            <p class="text-muted fst-italic">Back to <a class="text-decoration-none" id="backToLogIn">LogIn</a></p>
+                        </div>
+
+                        <div id="recivingPasswordMsg" class="alert alert-danger d-none">
+                            <p>You will recive password within 5 mins.</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div
+    </section>
+
+    <!-- Done Message To signIn now -->
+    <div class="doneMessage">
+        
+    </div>
+
+
+
+
+     <!-- Bootstrap -->
+     <script src="js/bootstrap.bundle.min.js"></script>
+     <!-- Fontawsome -->
+     <script src="js/all.min.js"></script>
+     <!-- Send the forgotten Password -->
+     <script src="https://smtpjs.com/v3/smtp.js"></script>
+     <!-- jQuery -->
+     <script src="js/jquery-3.6.0.min.js"></script>
+     <!-- My JS -->
+     <script src="js/logIn.js"></script>
+</body>
+</html>

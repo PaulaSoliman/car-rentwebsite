@@ -1,0 +1,612 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Car Rental</title>
+    <!-- Fav Icon -->
+    <link rel="shortcut icon" href="img/jeep.png" type="image/x-icon" />
+    <!-- Bootstrap -->
+    <link rel="stylesheet" href="css/bootstrap.min.css" />
+    <!-- Fontawsome -->
+    <link rel="stylesheet" href="css/all.min.css" />
+    <!-- My css -->
+    <link rel="stylesheet" href="css/style.css" />
+  </head>
+  <body>
+    <!-- ==== Start Navbar ==== -->
+    <nav class="navbar navbar-expand-lg navbar-light">
+      <div class="container">
+        <a class="navbar-brand" href="#">
+          <img src="img/jeep.png" class="favIcon" alt="" />
+        </a>
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarSupportedContent"
+          aria-controls="navbarSupportedContent"
+          aria-expanded="false"
+          aria-label="Toggle navigation"
+        >
+          <span class="navbar-toggler-icon"></span>
+          <span class="ps-2">Menu</span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+            <li class="nav-item">
+              <a class="nav-link active" aria-current="page" href="#home"
+                >Home</a
+              >
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#ride">Ride</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#services">Services</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#about">About</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#review">Review</a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="#contacts">Contacts</a>
+            </li>
+          </ul>
+
+          <!-- LogIn and SignUp -->
+          <div id="authenticationSection">
+            <ul class="navbar-nav ms-auto mb-2 mb-lg-0">
+              <li class="navauth">
+                <a class="nav-link fw-normal" href="signUp.html">Sign Up</a>
+              </li>
+
+              <li class="navauth">
+                <a class="nav-link fw-normal" href="logIn.html">Sign In</a>
+              </li>
+            </ul>
+          </div>
+
+          <!-- UserName and LogOut -->
+          <div id="nameAndLogout" class="d-none">
+            <ul
+              class="navbar-nav ms-auto mb-2 mb-lg-0 d-flex align-items-center"
+            >
+              <span class="nav-link fw-bold" id="currentUserName"></span>
+
+              <li class="navauth">
+                <a class="nav-link fw-normal" id="logOut">Logout</a>
+              </li>
+            </ul>
+          </div>
+        </div>
+      </div>
+    </nav>
+    <!-- ==== End Navbar ==== -->
+
+    <!-- === Start Header === -->
+    <header class="smallScrean headline px-5 py-4 w-100 vh-100" id="home">
+      <div class="row">
+        <div class="col-md-6 d-flex justify-content-center align-items-center">
+          <div class="headerItem-content">
+            <h2 class="my-4 fw-bold">
+              <span>Looking</span> <br />
+              to rent a car
+            </h2>
+            <p class="py-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Quam
+              expedita quasi eligendi eveniet et nam sit delectus dolorem ullam
+              vero eaque sed labore, ipsum quidem facilis velit nesciunt quo
+              excepturi.
+            </p>
+            <div class="d-flex align-items-center">
+              <img class="pe-4" src="img/512x512.png" alt="googlePlay" />
+              <img class="ps-4" src="img/ios.png" alt="ios" />
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6">
+          <div class="headerItem-img">
+            <img src="img/Car Website – 1@2x.png" class="w-100" alt="jeep" />
+          </div>
+        </div>
+
+        <div
+          class="rentDate py-4 d-flex justify-content-center align-items-center"
+        >
+          <div class="pe-4">
+            <label class="pb-2" for="location">Location</label>
+            <input
+              type="text"
+              placeholder="Search place"
+              class="form-control"
+              id="location"
+            />
+          </div>
+          <div class="pe-4">
+            <label class="pb-2" for="pickUp-date">Pick-Up Date</label>
+            <input type="date" class="form-control" id="pickUp-date" />
+          </div>
+          <div class="pe-4">
+            <label class="pb-2" for="returnDate">Return Date</label>
+            <input type="date" class="form-control" id="returnDate" />
+          </div>
+          <a class="text-decoration-none">Submit</a>
+        </div>
+      </div>
+    </header>
+    <!-- === End Header === -->
+
+    <!-- ==== Start How it's work ==== -->
+    <section class="py-5 container headline load-hidden" id="ride">
+      <div class="header text-center pb-5">
+        <h4 class="fw-lighter pb-1">How It's Work</h4>
+        <h4 class="h1 fw-bold">Rent With 3 Easy Steps</h4>
+      </div>
+
+      <div class="row g-3 headline load-hidden pt-4 text-center">
+        <div class="col-md-4">
+          <div class="item">
+            <i class="fa-solid fa-location-dot"></i>
+            <h3>Choose A Location</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam
+              placeat nulla minima corporis animi, earum pariatur ullam
+              consectetur itaque cumque omnis fuga error labore impedit ipsam
+              veniam a aspernatur reprehenderit.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="item">
+            <i class="fa-solid fa-calendar-days"></i>
+            <h3>Pick-Up Date</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam
+              placeat nulla minima corporis animi, earum pariatur ullam
+              consectetur itaque cumque omnis fuga error labore impedit ipsam
+              veniam a aspernatur reprehenderit.
+            </p>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="item">
+            <i class="fa-solid fa-calendar-check"></i>
+            <h3>Book A Car</h3>
+            <p>
+              Lorem ipsum dolor sit amet consectetur, adipisicing elit. Quisquam
+              placeat nulla minima corporis animi, earum pariatur ullam
+              consectetur itaque cumque omnis fuga error labore impedit ipsam
+              veniam a aspernatur reprehenderit.
+            </p>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==== End How it's work ==== -->
+
+    <!-- ==== Start Services ==== -->
+    <section class="headline load-hidden container py-5" id="services">
+      <div class="header pb-5 text-center">
+        <h4 class="fw-lighter pb-1">BEST SERVICES</h4>
+        <h2 class="h1 fw-bold">Explore out top deals from top rated deals</h2>
+      </div>
+
+      <div class="row g-3 pt-5">
+        <div class="col-md-4">
+          <div class="item">
+            <img src="img/car1.jpg" class="w-100" alt="car1" />
+            <span class="item-year">2022</span>
+            <h4 class="fw-bold">2020 Honda Civic</h4>
+            <p><span>$58500 | $358 </span> /month</p>
+            <button>Rent Now</button>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="item">
+            <img src="img/car2.jpg" class="w-100" alt="car1" />
+            <span class="item-year">2022</span>
+            <h4 class="fw-bold">2020 Honda Civic</h4>
+            <p><span>$58500 | $358 </span> /month</p>
+            <button>Rent Now</button>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="item">
+            <img src="img/car3.jpg" class="w-100" alt="car1" />
+            <span class="item-year">2022</span>
+            <h4 class="fw-bold">2020 Honda Civic</h4>
+            <p><span>$58500 | $358 </span> /month</p>
+            <button>Rent Now</button>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="item">
+            <img src="img/car4.jpg" class="w-100" alt="car1" />
+            <span class="item-year">2022</span>
+            <h4 class="fw-bold">2020 Honda Civic</h4>
+            <p><span>$58500 | $358 </span> /month</p>
+            <button>Rent Now</button>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="item">
+            <img src="img/car5.jpg" class="w-100" alt="car1" />
+            <span class="item-year">2022</span>
+            <h4 class="fw-bold">2020 Honda Civic</h4>
+            <p><span>$58500 | $358 </span> /month</p>
+            <button>Rent Now</button>
+          </div>
+        </div>
+
+        <div class="col-md-4">
+          <div class="item">
+            <img src="img/car6.jpg" class="w-100" alt="car1" />
+            <span class="item-year">2022</span>
+            <h4 class="fw-bold">2020 Honda Civic</h4>
+            <p><span>$58500 | $358 </span> /month</p>
+            <button>Rent Now</button>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- lightBox -->
+    <div class="lightBox d-none">
+      <div class="lightBoxContent">
+        <div class="arrowIcons px-5">
+          <i id="prev" class="fa-solid fa-angle-left"></i>
+          <i id="next" class="fa-solid fa-angle-right"></i>
+        </div>
+
+        <i id="exit" class="fa-solid fa-xmark"></i>
+      </div>
+    </div>
+    <!-- ==== End Services ==== -->
+
+    <!-- ==== Start About ==== -->
+    <section class="headline load-hidden container py-5" id="about">
+      <div class="header pb-5 text-center">
+        <h4 class="fw-lighter pb-1">ABOUT US</h4>
+        <h2 class="h1 fw-bold">Best Customer Services</h2>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="item">
+            <img src="img/about.png" class="w-100" alt="about" />
+          </div>
+        </div>
+
+        <div class="col-md-6 ps-5">
+          <div class="item">
+            <h3 class="h5 pb-2">About Us</h3>
+            <p class="pb-2">
+              Lorem ipsum dolor sit amet, consectetur adipisicing elit. Iste
+              cupiditate, unde quam culpa repellendus tempora rem? Vero
+              dignissimos ducimus beatae nihil quis fugit, impedit, quos iure
+              sit voluptate, recusandae architecto.
+            </p>
+            <p class="pb-5">
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Saepe
+              suscipit dolores tempora eius vel facere voluptate numquam ipsa
+              mollitia fugiat. Eius laborum et iste nemo vero, assumenda libero
+              aut cum.
+            </p>
+            <button>Learn More</button>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==== End About ==== -->
+
+    <!-- ==== Start Review ==== -->
+    <section class="headline load-hidden container py-5" id="review">
+      <div class="header pb-5 text-center">
+        <h4 class="fw-lighter pb-1">REVIEWS</h4>
+        <h2 class="h1 fw-bold">Whats Our Customer Say</h2>
+      </div>
+
+      <div
+        id="carouselExampleIndicators"
+        class="headline load-hidden carousel slide pt-5"
+        data-bs-ride="carousel"
+      >
+        <div class="carousel-indicators">
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="0"
+            aria-current="true"
+            aria-label="Slide 1"
+          >
+            <img src="img/rev1.jpg" alt="" />
+          </button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="1"
+            class="active"
+            aria-label="Slide 2"
+          >
+            <img src="img/rev2.jpg" alt="" />
+          </button>
+          <button
+            type="button"
+            data-bs-target="#carouselExampleIndicators"
+            data-bs-slide-to="2"
+            aria-label="Slide 3"
+          >
+            <img src="img/rev3.jpg" alt="" />
+          </button>
+        </div>
+        <div class="carousel-inner pt-5 text-center">
+          <div class="carousel-item">
+            <h3>Someone Name</h3>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+              modi corporis corrupti quam labore quia, necessitatibus qui nam
+              architecto distinctio, dignissimos officia sint minima beatae
+              assumenda fugit aliquam odio est!
+            </p>
+          </div>
+          <div class="carousel-item active">
+            <h3>Someone Name</h3>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+              modi corporis corrupti quam labore quia, necessitatibus qui nam
+              architecto distinctio, dignissimos officia sint minima beatae
+              assumenda fugit aliquam odio est!
+            </p>
+          </div>
+          <div class="carousel-item">
+            <h3>Someone Name</h3>
+            <div class="stars">
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star"></i>
+              <i class="fa-solid fa-star-half-stroke"></i>
+            </div>
+            <p>
+              Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptas
+              modi corporis corrupti quam labore quia, necessitatibus qui nam
+              architecto distinctio, dignissimos officia sint minima beatae
+              assumenda fugit aliquam odio est!
+            </p>
+          </div>
+        </div>
+        <button
+          class="carousel-control-prev"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="prev"
+        >
+          <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Previous</span>
+        </button>
+        <button
+          class="carousel-control-next"
+          type="button"
+          data-bs-target="#carouselExampleIndicators"
+          data-bs-slide="next"
+        >
+          <span class="carousel-control-next-icon" aria-hidden="true"></span>
+          <span class="visually-hidden">Next</span>
+        </button>
+      </div>
+    </section>
+    <!-- ==== End Review ==== -->
+
+    <!-- PaulaSoliman94.develop@gmail.com -->
+    <!-- 01221521221 -->
+
+    <!-- ==== Start Contacts ==== -->
+    <section class="container-fluid p-5" id="contacts">
+      <div class="header pb-5 text-center">
+        <h4 class="fw-bold h1">CONTACTS</h4>
+      </div>
+
+      <div class="row">
+        <div class="col-md-6">
+          <div class="item">
+            <div class="name py-3">
+              <label class="p-2 fw-bold" for="name">Full Name</label>
+              <input
+                type="text"
+                placeholder="Enter your Full Name"
+                class="form-control"
+                id="name"
+              />
+            </div>
+
+            <div class="phone py-3">
+              <label class="p-2 fw-bold" for="phone">Phone</label>
+              <input
+                type="tel"
+                placeholder="Enter your Phone"
+                class="form-control"
+                id="phone"
+              />
+            </div>
+
+            <div class="email py-3">
+              <label class="p-2 fw-bold" for="email">Email</label>
+              <input
+                type="email"
+                placeholder="Enter your email"
+                class="form-control"
+                id="email"
+              />
+            </div>
+
+            <div class="address py-3">
+              <label class="p-2 fw-bold" for="address">Address</label>
+              <input
+                type="text"
+                placeholder="Enter your address"
+                class="form-control"
+                id="address"
+              />
+            </div>
+
+            <div class="userId py-3">
+              <label class="p-2 fw-bold" for="userId">Natonal ID</label>
+              <input
+                type="file"
+                placeholder="Enter your userId"
+                class="form-control"
+                id="userId"
+              />
+            </div>
+
+            <div class="d-flex justify-content-end">
+              <button>Submit</button>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-md-6 ps-5 pt-5">
+          <div class="item">
+            <h2 class="fw-bold">Agency Contacts</h2>
+            <hr class="w-25 my-3" />
+
+            <div class="row">
+              <div class="col-md-6">
+                <div class="contacts pt-5">
+                  <table>
+                    <tr class="pt-2 d-block">
+                      <td class="fw-bold" style="color: var(--1stcolor)">
+                        Address :
+                      </td>
+                      <td class="px-3">73 st. California, USA</td>
+                    </tr>
+
+                    <tr class="pt-2 d-block">
+                      <td class="fw-bold" style="color: var(--1stcolor)">
+                        Phone :
+                      </td>
+                      <td class="px-3">01234567891</td>
+                    </tr>
+
+                    <tr class="pt-2 d-block">
+                      <td class="fw-bold" style="color: var(--1stcolor)">
+                        Email :
+                      </td>
+                      <td class="px-3">ABC@ABC.com</td>
+                    </tr>
+                  </table>
+                </div>
+              </div>
+
+              <div class="col-md-6 d-flex align-items-center">
+                <div class="socialMedia pt-5">
+                  <i class="fa-brands fa-facebook-f"></i>
+                  <i class="fa-brands fa-instagram"></i>
+                  <i class="fa-brands fa-twitter"></i>
+                  <i class="fa-brands fa-youtube"></i>
+                  <i class="fa-brands fa-tiktok"></i>
+                </div>
+              </div>
+            </div>
+
+            <div class="text-center mt-5">
+              <a
+                href="#"
+                class="d-block fs-3 text-decoration-none text-decoration-underline text-black"
+                >https://www.carrent.com</a
+              >
+            </div>
+
+            <div class="text-center mt-3">
+              <iframe
+                src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d27617.038772926055!2d31.309081238445664!3d30.09046738938022!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x1458158dab0cf899%3A0x2fc35ebf5f0ff873!2sHeliopolis%2C%20Cairo%20Governorate!5e0!3m2!1sen!2seg!4v1650306683229!5m2!1sen!2seg"
+                width="100%"
+                height="350"
+                style="border: 0"
+                allowfullscreen=""
+                loading="lazy"
+                referrerpolicy="no-referrer-when-downgrade"
+              ></iframe>
+            </div>
+          </div>
+        </div>
+      </div>
+    </section>
+    <!-- ==== End Contacts ==== -->
+
+    <!-- ==== Sart Footer ==== -->
+    <footer id="footer" class="headline load-hidden text-center text-white">
+      <h3 class="fw-bold">Subscribe To Newsletter</h3>
+      <div
+        class="subscription d-flex justify-content-center align-items-center"
+      >
+        <input
+          type="text"
+          class="my-4 w-25 form-control position-relative"
+          placeholder="Enter your email@ABC.com"
+        />
+        <button>Subscribe</button>
+      </div>
+      <p class="text-start">
+        <i class="fa-regular fa-copyright"></i>
+        <a class="text-decoration-none text-white fw-bold" href="#"
+          >Paula Soliman</a
+        >
+        All right reseved
+      </p>
+    </footer>
+    <!-- ==== End Footer ==== -->
+
+    <!-- ==== Start BackHome ==== -->
+    <div id="backHome">
+      <a class="text-decoration-none" href="#home"
+        ><i class="fa-solid fa-circle-up"></i
+      ></a>
+    </div>
+    <!-- ==== End BackHome ==== -->
+
+    <!-- Bootstrap -->
+    <script src="js/bootstrap.bundle.min.js"></script>
+    <!-- Fontawsome -->
+    <script src="js/all.min.js"></script>
+    <!-- jQuery -->
+    <script src="js/jquery-3.6.0.min.js"></script>
+    <!-- Scroll Reveal -->
+    <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- My JS -->
+    <script src="js/main.js"></script>
+    <!-- My Js for lightBox -->
+    <script src="js/lightBox.js"></script>
+  </body>
+  <!-- PaulaSoliman94.develop@gmail.com -->
+  <!-- 01221521221 -->
+</html>
