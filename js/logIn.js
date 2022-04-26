@@ -34,9 +34,9 @@ for (let i = 0; i < allInputs.length; i++) {
 }
 
 // if current user excit don't back to login page
-// if (localStorage.getItem('currentUser') != null) {
-//     window.location.href='../index.html'
-// }
+ if (localStorage.getItem('currentUser') != null) {
+    window.location.href='../index.html'
+ }
 
 // =======================================================
 
