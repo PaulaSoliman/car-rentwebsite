@@ -60,7 +60,7 @@ function userExcistance() {
     for (let i = 0; i < users.length; i++) {
         if (users[i].email == useremail.value && users[i].password == password.value) {
             setUpCurrentUser(i);
-            window.location.href = '../index.html';
+            window.location.href = '.././index.html';
             break;
         }
         else {
